@@ -1,0 +1,57 @@
+#menu 
+{
+	margin-left:450px;
+	width: 600px;
+	height: 50px;
+	z-index:9;
+	position: absolute;	
+    
+}
+#boton ul
+{
+	list-style: none;
+	padding: 0;
+    
+}
+#boton li
+{
+	display: inline;
+	text-align: center;
+    
+}
+#boton li a 
+{
+	padding: 10px 10px;
+	color: black;
+	background-color:#169A01;
+	border: 1px solid Lime;
+	text-decoration: none; 
+	font-family:cursive;
+	font-weight:bold;
+	box-shadow: inset 0px 0px 6px #fff;
+	border-radius: 113px;
+	display:block;
+	z-index:8;
+    
+}
+#boton li a:hover
+{
+	color:#9478FA;
+    
+}
+#boton li ul
+{
+	display:none;
+    position:absolute;
+    
+}
+#boton > li 
+{
+	float:left;
+    
+}
+#boton li:hover > ul 
+{
+	display:block;
+    
+}

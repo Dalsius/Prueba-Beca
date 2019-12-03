@@ -1,0 +1,33 @@
+
+<app-menu></app-menu><br><br><br>
+<div>
+    ID: <input type="text" id="ide">
+</div>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>username</th>
+        <th>email</th>
+        <th>address</th>
+        <th>phone</th>
+        <th>website</th>
+        <th>acciones</th>
+    </tr>   
+    <tr *ngFor ="let comentario of comentarios">
+        <td>{{comentario.id}}</td>
+        <td>{{comentario.name}}</td>
+        <td>{{comentario.username}}</td>
+        <td>{{comentario.email}}</td>
+        <td>{{comentario.address.street+" "+comentario.address.suite}}</td>
+        <td>{{comentario.phone}}</td>
+        <td>{{comentario.website}}</td>
+        <td><button (click)="desplegar(comentario.address)"> Ver </button></td>
+    </tr>
+  
+</table>
+
+<div class="localizar">
+    <app-cambiarcontent [detallitos]="detalles"></app-cambiarcontent>
+  </div>
+  

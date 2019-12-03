@@ -1,0 +1,5 @@
+<app-menu></app-menu><br><br>
+<div class="fotos " *ngFor='let user of fotos'>
+    <p>{{ user.title}}</p>
+    <img [src]="user.url">
+</div>
